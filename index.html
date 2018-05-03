@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Caesar Cipher Encrypter/Decrypter JavaScript Application</title>
+</head>
+<body>
+  <div class="container">
+    <header class="pt-4">
+      <h1 class="mb-0">Caesar Cipher Encrypter/Decrypter JavaScript Application</h1>
+    </header>
+    <hr class="my-4">
+    <main>
+      <p class="mb-4 text-secondary">Welcome to my Caesar cipher encrypter/decrypter JavaScript application. Select an encryption key and enter a message into the encrypter, then click encrypt to encrypt your message. Don't forget to remember the encryption key you used if you wish to decrypt
+        your message using the decrypter at a later stage.</p>
+        <div class="card mb-4 bg-light">
+          <h2 class="card-header h5">Encryption key</h2>
+          <div class="card-body">
+            <p class="text-secondary">Set the encryption key to be used by the encrypter/decrypter</p>
+            <select class="form-control" id="encryption-key-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card bg-light">
+              <h2 class="card-header h5">Encrypter</h2>
+              <div class="card-body" id="encrypter-body">
+                <p class="text-secondary">Enter a message to be encrypted here:</p>
+                <textarea class="form-control mb-3" id="encrypter-input"></textarea>
+                <button type="button" class="btn btn-success" id="encrypt-btn">Encrypt <i class="icon ion-locked"></i></button>
+                <button type="button" class="float-right btn btn-secondary" id="copy-to-clipboard-btn">Copy to clipboard <i class="icon ion-clipboard"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <h2 class="card-header h5">Decrypter</h2>
+              <div class="card-body" id="decrypter-body">
+                <p class="text-secondary">Enter a message to be decrypted here:</p>
+                <textarea class="form-control mb-3" id="decrypter-input"></textarea>
+                <button type="button" class="btn btn-danger" id="decrypt-btn">Decrypt <i class="icon ion-unlocked"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="py-4">
+        <small class="text-secondary">&copy; Oliver Tuck 2018. All Rights Reserved.</small>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+  </html>
