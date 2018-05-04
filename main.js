@@ -17,7 +17,7 @@ function encryptMessage() {
   letterIndexes = [];
   letterEncryptedIndexes = [];
   encryptedOutput = [];
-  for (i = 0; i < userInput.length; i++) {
+  for (var i = 0; i < userInput.length; i++) {
     letterIndexes[i] = alphabetString.indexOf(userInput[i]);
     if (letterIndexes[i] === -1) {
       encryptedOutput[i] = userInput[i];
@@ -61,7 +61,7 @@ function decryptMessage() {
   letterEncryptedIndexes = [];
   letterIndexes = [];
   decryptedOutput = [];
-  for (i = 0; i < userInput.length; i++) {
+  for (var i = 0; i < userInput.length; i++) {
     letterEncryptedIndexes[i] = alphabetString.indexOf(userInput[i]);
     if (letterEncryptedIndexes[i] === -1) {
       decryptedOutput[i] = userInput[i];
